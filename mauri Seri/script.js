@@ -8,3 +8,15 @@ document.addEventListener('scroll', () => {
     }
 })
 
+btn.addEventListener('click', () => {
+
+    fetch('http://localhost:3000', {
+        method:"POST",
+        header: {
+            'Content-type': 'text/plain'
+        },
+        body: inputText.value,
+    }).then(res => res.text())
+      .then(console.log)
+
+})
