@@ -325,13 +325,13 @@ section .card img {
     border-top:#f4b544 10px solid;
     margin-top:2em;
     background:#282428;
-    height:40vh;
+    min-height:20vh;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-.input button {
+.input input[type='submit'] {
 /*   position:absolute; */
 font-family: "Noto Kufi Arabic", sans-serif;
  border:none;
@@ -342,7 +342,7 @@ font-family: "Noto Kufi Arabic", sans-serif;
   height: 48px;
   border-radius:20px;
   border: 7.5px solid #282428;
-  margin: -7.5px 0;
+  margin: -7.5px 0px -7.5px -2px;
   font-size:1.3em;
 
 }
@@ -356,8 +356,7 @@ font-family: "Noto Kufi Arabic", sans-serif;
 }
 
 .input {
-  min-width:400px;
-  height:2em;
+  width: clamp(20em, 59vw, 35em);
   background:white;
   display:flex;
   border-radius:220px
